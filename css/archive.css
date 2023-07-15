@@ -1,0 +1,114 @@
+/*blog-brns*/
+
+.archive__btns {
+    margin-bottom: 60px;
+    position: relative;
+    display: flex;
+}
+
+.archive__btns__list {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.archive__btns__list_hr {
+    position: absolute;
+    width: 0.7px;
+    height: 50px;
+    background-color: var(--textcolor);
+    left: 156px;
+    bottom: 0;
+}
+
+.archive__btns__list__label {
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: var(--textcolor);
+}
+
+.archive__btns__list_select {
+    display: inline-block;
+    width: 124px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 0.5px solid #727171;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.select-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.select-container::before {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    content: "▼";
+    font-size: 6px;
+    color: var(--textcolor);
+}
+
+/*blog-contents*/
+
+.archive {
+    margin-bottom: 120px;
+}
+
+.archive-contents {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.archive-contents__list {
+    width: calc((100% - 65px * 2) / 3);
+    margin-right: 65px;
+    margin-bottom: 60px;
+}
+
+.archive-contents .archive-contents__list:nth-child(3n) {
+    margin-right: 0;
+}
+
+@media (max-width: 767px) {
+    .archive {
+        margin-bottom: 60px;
+    }
+    .archive-contents {
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .archive-contents__list {
+        width: calc((100% - 35px) / 2);
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .archive-contents__list__thumbnail{
+        height: 180px;
+    }
+    .archive-contents__list__tags{
+        width: 180px;
+        top: 71px;
+        left: -70px;
+    }
+}
+
+@media (max-width: 500px) {
+    .archive-contents {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .archive-contents__list {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
