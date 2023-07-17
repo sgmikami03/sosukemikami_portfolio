@@ -25,9 +25,9 @@ function add_css_files()
 	wp_enqueue_style('header-css', get_template_directory_uri() . '/css/header.css', "", '20210715');
 	wp_enqueue_style('footer-css', get_template_directory_uri() . '/css/footer.css', "", '20210715');
 
-	if(is_front_page()) {
+	//if(is_front_page()) {
 		wp_enqueue_style('top-css', get_template_directory_uri() . '/css/top.css', "", '20210715');
-	}
+	//}
 
 	if(is_archive()) {
 		wp_enqueue_style('archive-css', get_template_directory_uri() . '/css/archive.css', "", '20210715');
@@ -54,6 +54,7 @@ function imagepassshort($arg)
 }
 add_action('the_content', 'imagepassshort');
 
+/*
 function my_custom_init2()
 {
 	//カスタム投稿「work」の設定
@@ -99,4 +100,4 @@ add_action('init', 'my_custom_init2');
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
-}
+}*/

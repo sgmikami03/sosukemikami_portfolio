@@ -398,6 +398,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .sec-works ul li {
@@ -406,6 +407,7 @@ a:hover {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
 }
 
 .sec-works ul li img {

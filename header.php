@@ -16,9 +16,9 @@
     <header class="header mycontents">
         <a href="" class="title">Sosuke Mikami .com</a>
         <ul>
-            <li><a href="/#service">SERVICE</a></li>
-            <li><a href="/#about">ABOUT</a></li>
-            <li><a href="/#works">WORKS</a></li>
+            <li><a href="<?php echo esc_url( home_url('/#service') ); ?>">SERVICE</a></li>
+            <li><a href="<?php echo esc_url( home_url('/#about') ); ?>">ABOUT</a></li>
+            <li><a href="<?php echo esc_url( home_url('/#works') ); ?>">WORKS</a></li>
             <!--<li><a href="/#contact">CONTACT</a></li>-->
         </ul>
     </header>
