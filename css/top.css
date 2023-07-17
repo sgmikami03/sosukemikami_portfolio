@@ -443,6 +443,10 @@ a:hover {
     line-height: 23px;
 }
 
+.sec-works a {
+    text-decoration: none;
+}
+
 @media (max-width: 900px) {
     .sec-works ul {
         display: block;

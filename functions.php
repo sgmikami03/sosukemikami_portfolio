@@ -18,7 +18,9 @@ function mytheme_setup()
 add_action('after_setup_theme', 'mytheme_setup');
 
 function add_css_files()
-{
+{	
+	wp_enqueue_style('ress-css', get_template_directory_uri() . '/css/ress.css', "", '20210715');
+	
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array("jquery"), '1.0.0', true);
 	wp_enqueue_style('style-css', get_template_directory_uri() . '/css/style.css', "", '20210715');
 

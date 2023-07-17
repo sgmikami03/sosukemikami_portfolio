@@ -10,7 +10,7 @@
         <ul class="">
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php get_template_part("template-parts/blog-part"); ?>
+                    <?php get_template_part("template-parts/work-part"); ?>
                 <?php endwhile; ?>
             <?php endif; ?>
         </ul>
