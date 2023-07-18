@@ -44,7 +44,7 @@
         <div class="sec-about__content">
             <img src="<?php echo get_template_directory_uri(); ?>/img/about-img.png" alt="">
             <dl>
-            <dt>名前</dt>
+                <dt>名前</dt>
                 <dd>三上宗祐</dd>
                 <dt>大学</dt>
                 <dd>デザイン工学部システムデザイン学科</dd>
@@ -68,31 +68,21 @@
             <h2 class="sec__texts__title">Works</h2>
         </div>
 
+        <?php
+        $args = array(
+            'post_type' => 'work', //カスタム投稿タイプ名
+            'posts_per_page' => 3 //取得する投稿の件数
+        );
+
+        $my_query = new WP_Query($args);
+        ?>
+
         <ul>
-            <li>
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/work-sample-img.png" alt="">
-                    <p class="subtitle">法政大学マネジメント研究室 様</p>
-                    <h3 class="title">ホームページ開発</h3>
-                    <p class="text">HP開発/WordPress</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/work-sample-img.png" alt="">
-                    <p class="subtitle">法政大学 デザイン工学研究会 様</p>
-                    <h3 class="title">ホームページ開発</h3>
-                    <p class="text">HP開発/WordPress</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/work-sample-img.png" alt="">
-                    <p class="subtitle">株式会社 ミライ工事 様</p>
-                    <h3 class="title">ホームページ開発 企画</h3>
-                    <p class="text">HP開発/WordPress</p>
-                </a>
-            </li>
+            <?php if ($my_query->have_posts()) : ?>
+                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    <?php get_template_part("template-parts/work-part"); ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </ul>
 
         <a class="default-btn" href="">View More</a>
