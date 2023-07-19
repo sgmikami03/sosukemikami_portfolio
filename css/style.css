@@ -67,7 +67,7 @@ footer {
 }
 
 main {
-  min-height: calc(100vh - 130px - 50px);
+  min-height: calc(100vh - 80px - 50px);
 }
 
 
@@ -98,7 +98,7 @@ main {
   max-width: 600px;
 }
 
-.single__content p{
+.single__content p {
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
@@ -107,4 +107,26 @@ main {
 
 .single__content .grey-text {
   color: #8c8c8c;
+}
+
+.main_404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-404__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.content-404__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
 }
