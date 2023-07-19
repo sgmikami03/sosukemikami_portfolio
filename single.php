@@ -2,7 +2,7 @@
 
 <main>
     <div class="work-head">
-        Work
+        Blog
     </div>
 
     <section class="single mycontents">

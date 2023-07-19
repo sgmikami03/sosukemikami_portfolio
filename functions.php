@@ -28,7 +28,7 @@ function add_css_files()
 	wp_enqueue_style('footer-css', get_template_directory_uri() . '/css/footer.css', "", '20210715');
 
 	//if(is_front_page()) {
-		wp_enqueue_style('top-css', get_template_directory_uri() . '/css/top.css', "", '20210715');
+	wp_enqueue_style('top-css', get_template_directory_uri() . '/css/top.css', "", '20210715');
 	//}
 
 	if(is_archive()) {

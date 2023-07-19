@@ -66,3 +66,45 @@ footer {
   text-align: center;
 }
 
+main {
+  min-height: calc(100vh - 130px - 50px);
+}
+
+
+/*works single*/
+
+.single__texts {
+  margin-bottom: 60px;
+}
+
+.single__texts .single__texts__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.025em;
+  margin-bottom: -5px;
+}
+
+.single__texts .single__texts__title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+.single__texts img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.single__content p{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.single__content .grey-text {
+  color: #8c8c8c;
+}
