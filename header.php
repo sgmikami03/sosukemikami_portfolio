@@ -14,11 +14,11 @@
 
 <body>
     <header class="header mycontents">
-        <a href="" class="title">Sosuke Mikami .com</a>
+        <a href="<?php echo esc_url( home_url('/') ); ?>" class="title">Sosuke Mikami .com</a>
         <ul>
-            <li><a href="<?php echo esc_url( home_url('/#service') ); ?>">SERVICE</a></li>
-            <li><a href="<?php echo esc_url( home_url('/#about') ); ?>">ABOUT</a></li>
-            <li><a href="<?php echo esc_url( home_url('/#works') ); ?>">WORKS</a></li>
+            <!--<li><a href="<?php echo esc_url( home_url('/#service') ); ?>">SERVICE</a></li>-->
+            <li><a href="<?php echo esc_url( home_url('/#profile') ); ?>">PROFILE</a></li>
+            <li><a href="<?php echo esc_url( home_url('/work/') ); ?>">WORKS</a></li>
             <!--<li><a href="/#contact">CONTACT</a></li>-->
         </ul>
     </header>

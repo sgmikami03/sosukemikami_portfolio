@@ -4,6 +4,5 @@
         <p class="subtitle"><? the_field("client"); ?></p>
         <h3 class="title"><? the_title(); ?></h3>
         <p class="text"><? the_tags("", "/", "") ?></p>
-        blog
     </a>
 </li>

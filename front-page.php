@@ -36,7 +36,7 @@
         </ul>
     </section>
 
-    <section class="mycontents sec sec-about">
+    <section class="mycontents sec sec-about" id="profile">
         <div class="sec__texts">
             <h2 class="sec__texts__title">Profile</h2>
             <p class="sec__texts__text">私のスキルセットや経歴についてです。</p>
@@ -55,7 +55,10 @@
                 <dd>2021.6-11<br class="br-sp"> 株式会社white canvas<br>
                     2021.11-<br class="br-sp"> 株式会社ミライ工事</dd>
                 <dt>その他<br class="br-sp">リンクなど</dt>
-                <dd><a href="https://www.wantedly.com/id/sosuke_mikami">Wanteadly</a></dd>
+                <dd>
+                    <a href="https://www.wantedly.com/id/sosuke_mikami">Wanteadly</a>
+                    <a href="https://github.com/sgmikami03">github</a>
+                </dd>
             </dl>
         </div>
 
@@ -85,7 +88,7 @@
             <?php endif; ?>
         </ul>
 
-        <a class="default-btn" href="">View More</a>
+        <a class="default-btn" href="<?php echo esc_url( home_url('/work') ); ?>">View More</a>
     </section>
 
     <!--<section class="sec sec-contact">

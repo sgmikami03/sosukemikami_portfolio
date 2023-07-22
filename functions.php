@@ -56,6 +56,13 @@ function imagepassshort($arg)
 }
 add_action('the_content', 'imagepassshort');
 
+function add_post_tag_archive( $wp_query ) {
+	if ($wp_query->is_main_query() && $wp_query->is_tag()) {
+	  $wp_query->set( 'post_type', array('post','work'));
+	}
+  }
+  add_action( 'pre_get_posts', 'add_post_tag_archive' , 10 , 1);
+
 /*
 function my_custom_init2()
 {
